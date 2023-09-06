@@ -35,10 +35,10 @@ button {
   border: 1px solid #888;
   padding: 0.8rem 0.8rem;
   cursor: pointer;
+  color: #000;
 }
 
-button:active,
-button:hover {
+button:active{
   transform: translateY(3px);
 }
 
