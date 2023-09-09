@@ -21,24 +21,24 @@ function App() {
         <h1>{count}</h1>
       </div>
       <div className="btns">
-        <button onClick={() => setCount((count) => count + 1)}>
+        <button title="increase current value by 1" onClick={() => setCount((count) => count + 1)}>
           <ChevronUp />
         </button>
-        <button onClick={() => setCount((count) => count + 10)}>
+        <button title="increase current value by 10" onClick={() => setCount((count) => count + 10)}>
           <ChevronsUp />
         </button>
-        <button onClick={() => setCount((count) => count - count)}>
+        <button title="reset" onClick={() => setCount((count) => count - count)}>
           <RotateCcw />
         </button>
-        <button
+        <button title="random value: 1 - 100"
           onClick={() => setCount(() => Math.floor(Math.random() * 100) + 1)}
         >
           <Hash />
         </button>
-        <button onClick={() => setCount((count) => count - 10)}>
+        <button title="decrease current value by 10" onClick={() => setCount((count) => count - 10)}>
           <ChevronsDown />
         </button>
-        <button onClick={() => setCount((count) => count - 1)}>
+        <button title="decrease current value by 1" onClick={() => setCount((count) => count - 1)}>
           <ChevronDown />
         </button>
       </div>
